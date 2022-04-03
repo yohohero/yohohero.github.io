@@ -4,9 +4,22 @@
   
   
   <entry>
+    <title>在hibernate的第一脚坑</title>
+    <link href="/2022/04/03/%E5%9C%A8hibernate%E4%B8%AD%E7%9A%84%E7%AC%AC%E4%B8%80%E8%84%9A%E5%9D%91/"/>
+    <url>/2022/04/03/%E5%9C%A8hibernate%E4%B8%AD%E7%9A%84%E7%AC%AC%E4%B8%80%E8%84%9A%E5%9D%91/</url>
+    
+    <content type="html"><![CDATA[<p>最近在看ORM框架的hibernate，在视频里因为up主用的都是5.2的版本，然而我在官网里看的5.2只支持java8。而我电脑上的环境是java11的就选了一个5.5的(不知道为什么5.6的我下载不了)。在编写完代码后使用单元测试时，不出意外还是出意外了，报了一个Cannot get a connection as the driver manager is not properly initialized错误，其实这是一下能定位到哪出问题的(cfg配置文件要么驱动、要么url出错)，但是就是不知道怎么改，在网上查的也和我这一样。查了一下午发现是MySQL版本的问题，8.0以上的需要在最后加上时区。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于此站</title>
-    <link href="/2022/03/05/hello-world/"/>
-    <url>/2022/03/05/hello-world/</url>
+    <link href="/2022/03/05/%E5%85%B3%E4%BA%8E%E6%AD%A4%E7%AB%99/"/>
+    <url>/2022/03/05/%E5%85%B3%E4%BA%8E%E6%AD%A4%E7%AB%99/</url>
     
     <content type="html"><![CDATA[<p>关于此站是借助 <a href="https://hexo.io/">Hexo</a>作为框架搭建的。 作为java新人，接下来我可能会在上面发一些我在编程时踩过的坑，以及我对于一些编程的个人理解，一开始内容可能会有点乱七八糟，毫无顺序的乱发，在以后我会慢慢的整理，在它称为一个差不多成熟的Blog，我想我的知识体系搭建的也差不多了，加油!</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
